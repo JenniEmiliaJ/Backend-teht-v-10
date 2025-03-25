@@ -13,6 +13,12 @@ router.get('/', function(req, res, next) {
 // http://localhost:3000/users/register
 router.post('/register', uc.registerUser);
 
+/*{
+   "username": "huuhaa",
+   "password": "huuhaa",
+   "isadmin": true
+}*/
+
 // kirjautuminen
 router.post('/login', uc.authenticateUser);
 

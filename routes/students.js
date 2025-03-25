@@ -17,10 +17,21 @@ router.get('/:id', sc.findById); // :id -> kaksoispiste koska id on dynaaminen r
 
 // 3. findByStudentcode
 router.get('/bycode/:studentcode', sc.findByStudentcode);
-
+*/
 // 4. add
 router.post('/', authorize, sc.add);
 
+/*{
+  "student_code": "u1234",
+  "name": "Uuno Opiskelija",
+  "email": "u1234@jamk.fi",
+  "study_points": 100,
+  "grades": [{
+    "course_code": "HTS10600",
+    "grade": 0
+  }]
+} + headerseihin x-access-token ja token jonka saa rekiteröityessä.
+/*
 // 5. deleteStudent
 router.delete('/delete/:studentcode', authorize, sc.deleteStudent);
 
